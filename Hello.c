@@ -6,22 +6,24 @@ int main()
   char znak;
   
   printf("podaj liczba 1:\n");
-  scanf("%i",&licza1);
+  scanf("%i",&liczba1);
   
   printf("podaj liczba 2:\n");
   scanf("%i",&liczba2);
+  
+  getchar();
     
   printf("podaj znak +-*/^");
   scanf("%c",&znak);
   
   switch(znak)
   {
-    case '+': printf("%i+%i=%i",liczba1,liczba2,liczba1+liczba2);
-    case '-': printf("%i-%i=%i",liczba1,liczba2,liczba1-liczba2);
-    case '*': printf("%i*%i=%i",liczba1,liczba2,liczba1*liczba2);
-    case '/': printf("%i+%i=%i",liczba1,liczba2,liczba1/liczba2);
-    case '^': printf("%i+%i=%i",liczba1,liczba2,liczba1^liczba2);
-    defoult: printf("podano zly znak");
+    case '+': printf("%i+%i=%i",liczba1,liczba2,liczba1+liczba2);break;
+    case '-': printf("%i-%i=%i",liczba1,liczba2,liczba1-liczba2);break;
+    case '*': printf("%i*%i=%i",liczba1,liczba2,liczba1*liczba2);break;
+    case '/': printf("%i+%i=%i",liczba1,liczba2,liczba1/liczba2);break;
+    case '^': printf("%i+%i=%i",liczba1,liczba2,liczba1^liczba2);break;
+    default: printf("podano zly znak");
   }
  
   
